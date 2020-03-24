@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuzijiang1093883.github.io</id>
     <title>鱼子酱の日记</title>
-    <updated>2020-03-24T09:38:46.257Z</updated>
+    <updated>2020-03-24T09:50:31.627Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuzijiang1093883.github.io"/>
     <link rel="self" href="https://yuzijiang1093883.github.io/atom.xml"/>
@@ -17,7 +17,7 @@
         </link>
         <updated>2020-03-24T09:28:20.000Z</updated>
         <content type="html"><![CDATA[<!--more-->
-<p>** 这是我逼自己写下来的东西 **<br>
+<p><strong>这是我逼自己写下来的东西</strong><br>
 最近作文水平直线下降，所以我逼自己写日记，就算是流水账也要写下来。<br>
 从2020.3.24开始，不知道什么时候结束.....</p>
 ]]></content>
