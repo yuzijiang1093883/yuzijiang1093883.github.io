@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuzijiang1093883.github.io</id>
     <title>鱼子酱の日记</title>
-    <updated>2020-03-26T05:20:57.334Z</updated>
+    <updated>2020-03-26T14:25:15.361Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuzijiang1093883.github.io"/>
     <link rel="self" href="https://yuzijiang1093883.github.io/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://yuzijiang1093883.github.io/images/avatar.png</logo>
     <icon>https://yuzijiang1093883.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 鱼子酱の日记</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.3.26の日记]]></title>
+        <id>https://yuzijiang1093883.github.io/post/2020326nori-ji/</id>
+        <link href="https://yuzijiang1093883.github.io/post/2020326nori-ji/">
+        </link>
+        <updated>2020-03-26T14:18:45.000Z</updated>
+        <content type="html"><![CDATA[<p>今天的作业好多呀，然而我还是半夜爆肝写完了QAQ</p>
+<p>关于昨天立下的flag,他咕了...</p>
+<p>等周末有时间再说吧...</p>
+<p>已经想好名字与文案了。但不知道能不能过审吧...</p>
+<p>只希望kkk给一条活路...</p>
+<p>算了，我还有作业呢...</p>
+<p><strong>EOF</strong></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.3.25の日记]]></title>
         <id>https://yuzijiang1093883.github.io/post/diary-per-url-one/</id>
