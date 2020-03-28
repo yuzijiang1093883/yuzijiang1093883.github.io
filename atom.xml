@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuzijiang1093883.github.io</id>
     <title>鱼子酱の日记</title>
-    <updated>2020-03-26T14:29:34.238Z</updated>
+    <updated>2020-03-28T09:59:56.637Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuzijiang1093883.github.io"/>
     <link rel="self" href="https://yuzijiang1093883.github.io/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://yuzijiang1093883.github.io/images/avatar.png</logo>
     <icon>https://yuzijiang1093883.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 鱼子酱の日记</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.3.27の日记]]></title>
+        <id>https://yuzijiang1093883.github.io/post/RB0n7q0PN/</id>
+        <link href="https://yuzijiang1093883.github.io/post/RB0n7q0PN/">
+        </link>
+        <updated>2020-03-27T09:45:56.000Z</updated>
+        <content type="html"><![CDATA[<p>昨天玩了一天</p>
+<p>准备给阿神大大作图。</p>
+<p>名字叫：不用模组的幸运方块！</p>
+<p><s>没错，今天就是那么水</s></p>
+<p><strong>EOF</strong></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.3.26の日记]]></title>
         <id>https://yuzijiang1093883.github.io/post/2020326nori-ji/</id>
