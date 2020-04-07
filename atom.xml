@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuzijiang1093883.github.io</id>
     <title>鱼子酱の日记</title>
-    <updated>2020-04-04T02:24:08.143Z</updated>
+    <updated>2020-04-07T02:53:08.818Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuzijiang1093883.github.io"/>
     <link rel="self" href="https://yuzijiang1093883.github.io/atom.xml"/>
@@ -11,68 +11,14 @@
     <icon>https://yuzijiang1093883.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 鱼子酱の日记</rights>
     <entry>
-        <title type="html"><![CDATA[2020.3.27の日记]]></title>
-        <id>https://yuzijiang1093883.github.io/post/RB0n7q0PN/</id>
-        <link href="https://yuzijiang1093883.github.io/post/RB0n7q0PN/">
+        <title type="html"><![CDATA[关于随笔]]></title>
+        <id>https://yuzijiang1093883.github.io/post/VpyaYOueD/</id>
+        <link href="https://yuzijiang1093883.github.io/post/VpyaYOueD/">
         </link>
-        <updated>2020-03-27T09:45:56.000Z</updated>
-        <content type="html"><![CDATA[<p>昨天玩了一天</p>
-<p>准备给阿神大大作图。</p>
-<p>名字叫：不用模组的幸运方块！</p>
-<p><s>没错，今天就是那么水</s></p>
-<p><strong>EOF</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.3.26の日记]]></title>
-        <id>https://yuzijiang1093883.github.io/post/2020326nori-ji/</id>
-        <link href="https://yuzijiang1093883.github.io/post/2020326nori-ji/">
-        </link>
-        <updated>2020-03-26T14:18:45.000Z</updated>
-        <content type="html"><![CDATA[<p>今天的作业好多呀，然而我还是半夜爆肝写了QAQ</p>
-<p>关于昨天立下的flag,他咕了...</p>
-<p>等周末有时间再说吧...</p>
-<p>已经想好名字与文案了。但不知道能不能过审吧...</p>
-<p>只希望kkk给一条活路...</p>
-<p>算了，我还有作业呢...</p>
-<p><strong>EOF</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.3.25の日记]]></title>
-        <id>https://yuzijiang1093883.github.io/post/diary-per-url-one/</id>
-        <link href="https://yuzijiang1093883.github.io/post/diary-per-url-one/">
-        </link>
-        <updated>2020-03-25T05:11:32.000Z</updated>
-        <content type="html"><![CDATA[<p>今天作业好多呀。我都写不过来了。</p>
-<p>晚上11点可能才会睡觉。</p>
-<p>明天准备投稿洛咕日爆。</p>
-<p>不多说了，写作业去了......</p>
-<p><strong>EOF</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.3.24の日记]]></title>
-        <id>https://yuzijiang1093883.github.io/post/diary-per-url-zero/</id>
-        <link href="https://yuzijiang1093883.github.io/post/diary-per-url-zero/">
-        </link>
-        <updated>2020-03-24T12:19:14.000Z</updated>
-        <content type="html"><![CDATA[<p>今天.......<br>
-创建了diary.yuzijiangorz.xyz<br>
-学会了创建二级域名。<s>以后可以用来坑人</s></p>
-<p><strong>EOF</strong></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于日记]]></title>
-        <id>https://yuzijiang1093883.github.io/post/guan-yu-zhe-pian-ri-ji/</id>
-        <link href="https://yuzijiang1093883.github.io/post/guan-yu-zhe-pian-ri-ji/">
-        </link>
-        <updated>2020-03-24T09:28:20.000Z</updated>
-        <content type="html"><![CDATA[<!--more-->
-<p><strong>这是我逼自己写下来的东西</strong><br>
-最近作文水平直线下降，所以我逼自己写日记，就算是流水账也要写下来。<br>
-从2020.3.24开始，不知道什么时候结束.....</p>
+        <updated>2020-04-07T02:49:15.000Z</updated>
+        <content type="html"><![CDATA[<p>一开始是日记</p>
+<p>后来改为随笔</p>
+<p>日记咕咕咕了....</p>
 ]]></content>
     </entry>
 </feed>
