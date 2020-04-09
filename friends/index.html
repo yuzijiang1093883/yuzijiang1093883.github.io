@@ -41,10 +41,16 @@
 <body>
     <div id=side>
         <div class="avatar-border">
-            <img src="https://yuzijiang1093883.github.io/images/avatar.png?v=1586342442467" class="avatar">
+            <img src="https://yuzijiang1093883.github.io/images/avatar.png?v=1586420910990" class="avatar">
         </div>
         <div class="sitename">鱼子酱の随笔</div>
         <span class="describtion" data-text='["简简单单的随笔"]'>&nbsp;</span>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
+        </div>
         
     <div class="share-button">
         <span>Contact</span>
@@ -82,12 +88,16 @@
     
     
     
+        <div class="mchocie describtion">
+            <a href="https://yuzijiang1093883.github.io/friends" class="menubutton">友链</a>
+        </div>
+    
     <hr>
     <div id="footinfo">Powered by <a href="https://yuzijiangorz.xyz">yuzijiangorz</a>
 made by <strong>Gridea</strong> | Theme: Fog</div>
     <div id="sitegotimeDate">载入天数...</div>
     <div id="sitegotimes">载入时分秒...</div>
-    <div id="cussitetime" style="display:none"></div>
+    <div id="cussitetime" style="display:none">02/02/2020</div>
     </div>
 </body>
 
@@ -259,16 +269,159 @@ made by <strong>Gridea</strong> | Theme: Fog</div>
                     <body>
     <div id="friendscontainermobile">
         
+        
+        
     </div>
 
     <div id="friendscontainer">
+        
+        
         
     </div>
 </body>
                     <div name="comment" style="background: white">
                         <div class="commentcontainer">
                             
-                            <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                            <head>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script src="https://yuzijiang1093883.github.io/media/js/jquery.min.js"></script>
+</head>
+<style>
+    @media screen and (min-width: 1300px) {
+        .v {
+            margin-top: 10%;
+        }
+
+        .v .vwrap {
+            overflow: hidden;
+        }
+
+        .v .vwrap {
+            padding: 0 0 44px;
+        }
+
+        .v .veditor {
+            min-height: 7rem;
+            resize: none;
+        }
+
+        .v .vwrap .vedit {
+            padding-top: 0
+        }
+
+        .v .vwrap .vheader {
+            width: 80%;
+            bottom: 0;
+            position: absolute;
+            background: #f7f7f7;
+        }
+
+        .v .vinput {
+            padding: 10px 15px;
+        }
+
+        .v .vwrap .vheader .vinput {
+            border-bottom: 0px
+        }
+
+        .v .vwrap .vedit .vctrl {
+            margin-top: -44px;
+            right: 0;
+            position: absolute;
+            margin-right: -3px;
+        }
+
+        .v .vwrap .vcontrol {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 20%;
+            padding-top: 0px;
+        }
+    }
+
+    .v .vwrap .vcontrol .col.col-80 {
+        width: 100%;
+    }
+
+    .v .vbtn.vsubmit {
+        border-radius: 0;
+        padding: 0;
+        color: #fff;
+        line-height: 44px;
+        width: 100%;
+        border: none;
+        background: #1abc9c;
+    }
+
+    .v .vwrap .vedit .vctrl span.vpreview-btn,
+    .v .vwrap .vcontrol .col.col-20,
+    .v .vlist .vcard .vhead .vsys {
+        display: none;
+    }
+
+    .v .vwrap .vmark .valert {
+        padding-top: 0px;
+    }
+
+    .vtext{
+        padding: 0;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .v .vwrap .vmark .valert{
+            margin-top:60%;
+        }
+        .vwrap{
+            margin: 15px;
+            width: 90%;
+        }
+        .v .vwrap .vheader .vinput {
+            padding: 10px 5px;
+        }
+        .v .vwrap{
+            overflow: auto;
+        }
+        .v .veditor {
+            min-height: 30rem;
+            resize: none;
+        }
+
+        .v .vinput {
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+
+        .v .vwrap .vedit .vctrl {
+            right: 0;
+        }
+
+        .v .vempty {
+            padding: 1.25em;
+            text-align: center;
+            color: #999;
+            font-size: 25px;
+        }
+
+    }
+</style>
+
+<body>
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'TSHcHERjxN5QFnqvNIeDwHqO-gzGzoHsz',
+            appKey: 'tncIcDu469gOysLWDSUvO7MB',
+            notify: true,
+            verify: false,
+            avatar: 'retro',
+            pageSize: 30,
+            placeholder: '既然来了，那就留个痕迹吧~',
+        })
+    </script>
+</body>
+                            <div class="clear"></div>
                             
                         </div>
                     </div>
@@ -278,7 +431,7 @@ made by <strong>Gridea</strong> | Theme: Fog</div>
         </div>
         <div id="bg">
         </div>
-        <div id="bgurl" style="display:none"></div>
+        <div id="bgurl" style="display:none">/media/images/bgimg.png</div>
     </div>
 
     <!-- 响应式布局，针对手机端内容显示 -->
@@ -331,6 +484,9 @@ made by <strong>Gridea</strong> | Theme: Fog</div>
           
           
           
+          <li><a href="https://yuzijiang1093883.github.io/friends">友链</a></li>
+
+          
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -346,9 +502,13 @@ made by <strong>Gridea</strong> | Theme: Fog</div>
         <body>
     <div id="friendscontainermobile">
         
+        
+        
     </div>
 
     <div id="friendscontainer">
+        
+        
         
     </div>
 </body>
@@ -356,7 +516,146 @@ made by <strong>Gridea</strong> | Theme: Fog</div>
         <div name="comment" style="background: white">
             <div class="commentcontainer">
                 
-                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                <head>
+        <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+        <script src="https://yuzijiang1093883.github.io/media/js/jquery.min.js"></script>
+    </head>
+    <style>
+        @media screen and (min-width: 1300px) {
+            .v {
+                margin-top: 10%;
+            }
+    
+            .v .vwrap {
+                overflow: hidden;
+            }
+    
+            .v .vwrap {
+                padding: 0 0 44px;
+            }
+    
+            .v .veditor {
+                min-height: 7rem;
+                resize: none;
+            }
+    
+            .v .vwrap .vedit {
+                padding-top: 0
+            }
+    
+            .v .vwrap .vheader {
+                width: 80%;
+                bottom: 0;
+                position: absolute;
+                background: #f7f7f7;
+            }
+    
+            .v .vinput {
+                padding: 10px 15px;
+            }
+    
+            .v .vwrap .vheader .vinput {
+                border-bottom: 0px
+            }
+    
+            .v .vwrap .vedit .vctrl {
+                margin-top: -44px;
+                right: 0;
+                position: absolute;
+                margin-right: -3px;
+            }
+    
+            .v .vwrap .vcontrol {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 20%;
+                padding-top: 0px;
+            }
+        }
+    
+        .v .vwrap .vcontrol .col.col-80 {
+            width: 100%;
+        }
+    
+        .v .vbtn.vsubmit {
+            border-radius: 0;
+            padding: 0;
+            color: #fff;
+            line-height: 44px;
+            width: 100%;
+            border: none;
+            background: #1abc9c;
+        }
+    
+        .v .vwrap .vedit .vctrl span.vpreview-btn,
+        .v .vwrap .vcontrol .col.col-20,
+        .v .vlist .vcard .vhead .vsys {
+            display: none;
+        }
+    
+        .v .vwrap .vmark .valert {
+            padding-top: 0px;
+        }
+    
+        .vtext{
+            padding: 0;
+        }
+    
+        @media screen and (max-width: 1300px) {
+            .v .vwrap .vmark .valert{
+                margin-top:60%;
+            }
+            .vwrap{
+                margin: 15px;
+                width: 100%;
+            }
+            .v .vwrap .vheader .vinput {
+                padding: 10px 5px;
+            }
+            .v .vwrap{
+                overflow: auto;
+            }
+            .v .veditor {
+                min-height: 30rem;
+                resize: none;
+            }
+    
+            .v .vinput {
+                padding: 10px 15px;
+                font-size: 20px;
+            }
+    
+            .v .vwrap .vedit .vctrl {
+                right: 0;
+            }
+    
+            .v .vempty {
+                padding: 1.25em;
+                text-align: center;
+                color: #999;
+                font-size: 25px;
+            }
+    
+        }
+    </style>
+    
+    <body>
+        <div id="vcomments1"></div>
+        <script>
+            new Valine({
+                el: '#vcomments1',
+                appId: 'TSHcHERjxN5QFnqvNIeDwHqO-gzGzoHsz',
+                appKey: 'tncIcDu469gOysLWDSUvO7MB',
+                notify: true,
+                verify: false,
+                avatar: 'retro',
+                pageSize: 30,
+                placeholder: '既然来了，那就留个痕迹吧~',
+            })
+        </script>
+    </body>
+                <div class="clear"></div>
                 
             </div>
         </div>
@@ -365,3 +664,6 @@ made by <strong>Gridea</strong> | Theme: Fog</div>
 
 </html>
 <script src="https://yuzijiang1093883.github.io/media/js/index.js"></script>
+
+<script src="https://l2dwidget.js.org//lib/L2Dwidget.min.js"></script>
+<script src="https://yuzijiang1093883.github.io/media/js/live2d.js"></script>
