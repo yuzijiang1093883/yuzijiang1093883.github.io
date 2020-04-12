@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuzijiang1093883.github.io</id>
     <title>蒟蒻炖蒟蒻的官方博客</title>
-    <updated>2020-04-12T13:13:40.811Z</updated>
+    <updated>2020-04-12T15:12:34.279Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuzijiang1093883.github.io"/>
     <link rel="self" href="https://yuzijiang1093883.github.io/atom.xml"/>
@@ -15,7 +15,8 @@
         <link href="https://yuzijiang1093883.github.io/post/UrsY5O8Ml/">
         </link>
         <updated>2020-04-12T13:12:01.000Z</updated>
-        <content type="html"><![CDATA[<p>比赛后才会有</p>
+        <content type="html"><![CDATA[<p>比赛后才会有<br>
+预告:赛后题解将会在比赛后五分钟内做出来，请各位选手们期待把!</p>
 ]]></content>
     </entry>
     <entry>
