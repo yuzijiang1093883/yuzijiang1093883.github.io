@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="这里是蒟蒻炖蒟蒻的官方blog
+这里会贴上比赛的赛时答疑以及题解与思路
+" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://yuzijiang1093883.github.io/media/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+              
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://yuzijiang1093883.github.io/media/css/bootstrap.min.css">
-    <meta name="description" content="" />
     <title>蒟蒻炖蒟蒻的官方博客</title>
 </head>
-<style>
-    @media screen and (max-width: 1300px) {
-        .archives-content ul li>span {
-            display: none;
-        }
-
-        .archives-content ul {
-            padding: 0px;
-        }
-    }
-</style>
 
 <body>
     <!-- 响应式布局，针对PC端内容显示 -->
@@ -256,20 +249,80 @@
             alert("博主暂未设置QQ联系方式");
     }
 </script></div>
-                <div id="main" class="col-xs-12 col-sm-7" style="z-index: 999;">
-                    <body>
-    <div id="friendscontainermobile">
-        
-        
-        
-    </div>
+                <div id="tab1" class="tab">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close"></div>
+                </div>
+                <div id="main" class="col-xs-12 col-sm-7">
+                    <link rel="stylesheet" href="https://yuzijiang1093883.github.io/media/css/font-awesome.css">
+<style>
 
-    <div id="friendscontainer">
-        
-        
-        
+</style>
+
+<body>
+    <div class="allcontent">
+        <div class="postshow">
+            
+            <div class="postdetailimg" style="width:100%;overflow: hidden;display: none">
+                <img src="http://img.xjh.me/random_img.php?type=bg&amp;ctype=nature&amp;return=302" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo">
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-04-12</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+                <div class="posttag">
+                    
+                </div>
+            </div>
+            
+            <div id="texttitle" style="text-align: center">
+                <h2>公告</h2>
+            </div>
+            <div class="text ">
+                <p>这里是蒟蒻炖蒟蒻的官方blog</p>
+<p>这里会贴上比赛的赛时答疑以及题解与思路</p>
+
+            </div>
+            
+            
+        </div>
     </div>
 </body>
+<script>
+    var t_img; // 定时器
+    var isLoad = true; // 控制变量
+    isImgLoad(function () {
+        // 加载完成
+        $('.postdetailimg').css("display", "block");
+    });
+    // 判断图片加载的函数
+    function isImgLoad(callback) {
+        // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
+        // 查找所有封面图，迭代处理
+        $('.postdetailimg').each(function () {
+            // 找到为0就将isLoad设为false，并退出each
+            if (this.height === 0) {
+                isLoad = false;
+                return false;
+            }
+        });
+        // 为true，没有发现为0的。加载完毕
+        if (isLoad) {
+            clearTimeout(t_img); // 清除定时器
+            // 回调函数
+            callback();
+            // 为false，因为找到了没有加载完成的图，将调用定时器递归
+        } else {
+            isLoad = true;
+            t_img = setTimeout(function () {
+                isImgLoad(callback); // 递归扫描
+            }, 500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
+        }
+    }
+</script>
                     <div name="comment" style="background: white">
                         <div class="commentcontainer">
                             
@@ -417,14 +470,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-2"></div>
+                <div class="toc-container">
+                    
+                </div>
             </div>
         </div>
         <div id="bg">
         </div>
         <div id="bgurl" style="display:none">/media/images/bgimg.png</div>
     </div>
-
     <!-- 响应式布局，针对手机端内容显示 -->
     <div class="nav-small">
         <head>
@@ -483,21 +537,72 @@
   <!-- 引入BootStrap核心js文件 -->
   <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-        <div style="margin-top:60px"></div>
-        <body>
-    <div id="friendscontainermobile">
-        
-        
-        
-    </div>
+        <div style="margin-top:30px"></div>
+        <link rel="stylesheet" href="https://yuzijiang1093883.github.io/media/css/font-awesome.css">
+<style>
 
-    <div id="friendscontainer">
-        
-        
-        
+</style>
+
+<body>
+    <div class="allcontent">
+        <div class="postshow">
+            
+            <div class="postdetailimg" style="width:100%;overflow: hidden;display: none">
+                <img src="http://img.xjh.me/random_img.php?type=bg&amp;ctype=nature&amp;return=302" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo">
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-04-12</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+                <div class="posttag">
+                    
+                </div>
+            </div>
+            
+            <div id="texttitle" style="text-align: center">
+                <h2>公告</h2>
+            </div>
+            <div class="text ">
+                <p>这里是蒟蒻炖蒟蒻的官方blog</p>
+<p>这里会贴上比赛的赛时答疑以及题解与思路</p>
+
+            </div>
+            
+            
+        </div>
     </div>
 </body>
-        <div style="margin-bottom:60px">&nbsp;</div>
+<script>
+    var t_img; // 定时器
+    var isLoad = true; // 控制变量
+    isImgLoad(function () {
+        // 加载完成
+        $('.postdetailimg').css("display", "block");
+    });
+    // 判断图片加载的函数
+    function isImgLoad(callback) {
+        // 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
+        // 查找所有封面图，迭代处理
+        $('.postdetailimg').each(function () {
+            // 找到为0就将isLoad设为false，并退出each
+            if (this.height === 0) {
+                isLoad = false;
+                return false;
+            }
+        });
+        // 为true，没有发现为0的。加载完毕
+        if (isLoad) {
+            clearTimeout(t_img); // 清除定时器
+            // 回调函数
+            callback();
+            // 为false，因为找到了没有加载完成的图，将调用定时器递归
+        } else {
+            isLoad = true;
+            t_img = setTimeout(function () {
+                isImgLoad(callback); // 递归扫描
+            }, 500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
+        }
+    }
+</script>
         <div name="comment" style="background: white">
             <div class="commentcontainer">
                 
@@ -645,10 +750,12 @@
             </div>
         </div>
     </div>
-</body>
 
-</html>
-<script src="https://yuzijiang1093883.github.io/media/js/index.js"></script>
+</body>
+<script>
+    hljs.initHighlightingOnLoad()
+</script>
+<script src="https://yuzijiang1093883.github.io/media/js/post.js"></script>
 
 <script src="https://l2dwidget.js.org//lib/L2Dwidget.min.js"></script>
 <script src="https://yuzijiang1093883.github.io/media/js/live2d.js"></script>

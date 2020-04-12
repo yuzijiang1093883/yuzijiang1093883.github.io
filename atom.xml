@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuzijiang1093883.github.io</id>
-    <title>鱼子酱の随笔</title>
-    <updated>2020-04-09T08:28:33.922Z</updated>
+    <title>蒟蒻炖蒟蒻的官方博客</title>
+    <updated>2020-04-12T04:11:16.021Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuzijiang1093883.github.io"/>
     <link rel="self" href="https://yuzijiang1093883.github.io/atom.xml"/>
-    <subtitle>简简单单的随笔</subtitle>
     <logo>https://yuzijiang1093883.github.io/images/avatar.png</logo>
     <icon>https://yuzijiang1093883.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 鱼子酱の随笔</rights>
+    <rights>All rights reserved 2020, 蒟蒻炖蒟蒻的官方博客</rights>
     <entry>
-        <title type="html"><![CDATA[关于随笔]]></title>
-        <id>https://yuzijiang1093883.github.io/post/VpyaYOueD/</id>
-        <link href="https://yuzijiang1093883.github.io/post/VpyaYOueD/">
+        <title type="html"><![CDATA[公告]]></title>
+        <id>https://yuzijiang1093883.github.io/post/XdLZ-AfUn/</id>
+        <link href="https://yuzijiang1093883.github.io/post/XdLZ-AfUn/">
         </link>
-        <updated>2020-04-07T02:49:15.000Z</updated>
-        <content type="html"><![CDATA[<p>一开始是日记</p>
-<p>后来改为随笔</p>
-<p>日记咕咕咕了....</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="white"><mrow><mi>h</mi><mi>t</mi><mi>t</mi><mi>p</mi><mi>s</mi><mo>:</mo><mi mathvariant="normal">/</mi><mi mathvariant="normal">/</mi><mi>w</mi><mi>s</mi><mn>28.</mn><mi>c</mi><mi>n</mi><mi mathvariant="normal">/</mi><mi>f</mi><mi mathvariant="normal">/</mi><mn>28</mn><mi>v</mi><mi>v</mi><mn>0</mn><mi>o</mi><mn>4</mn><mi>o</mi><mi>e</mi><mi>y</mi><mn>0</mn></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{white}{https://ws28.cn/f/28vv0o4oey0}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord" style="color:white;"><span class="mord mathdefault" style="color:white;">h</span><span class="mord mathdefault" style="color:white;">t</span><span class="mord mathdefault" style="color:white;">t</span><span class="mord mathdefault" style="color:white;">p</span><span class="mord mathdefault" style="color:white;">s</span><span class="mspace" style="color:white;margin-right:0.2777777777777778em;"></span><span class="mrel" style="color:white;">:</span><span class="mspace" style="color:white;margin-right:0.2777777777777778em;"></span><span class="mord" style="color:white;">/</span><span class="mord" style="color:white;">/</span><span class="mord mathdefault" style="margin-right:0.02691em;color:white;">w</span><span class="mord mathdefault" style="color:white;">s</span><span class="mord" style="color:white;">2</span><span class="mord" style="color:white;">8</span><span class="mord" style="color:white;">.</span><span class="mord mathdefault" style="color:white;">c</span><span class="mord mathdefault" style="color:white;">n</span><span class="mord" style="color:white;">/</span><span class="mord mathdefault" style="margin-right:0.10764em;color:white;">f</span><span class="mord" style="color:white;">/</span><span class="mord" style="color:white;">2</span><span class="mord" style="color:white;">8</span><span class="mord mathdefault" style="margin-right:0.03588em;color:white;">v</span><span class="mord mathdefault" style="margin-right:0.03588em;color:white;">v</span><span class="mord" style="color:white;">0</span><span class="mord mathdefault" style="color:white;">o</span><span class="mord" style="color:white;">4</span><span class="mord mathdefault" style="color:white;">o</span><span class="mord mathdefault" style="color:white;">e</span><span class="mord mathdefault" style="margin-right:0.03588em;color:white;">y</span><span class="mord" style="color:white;">0</span></span></span></span></span></p>
+        <updated>2020-04-12T04:05:37.000Z</updated>
+        <content type="html"><![CDATA[<p>这里是蒟蒻炖蒟蒻的官方blog</p>
+<p>这里会贴上比赛的赛时答疑以及题解与思路</p>
 ]]></content>
     </entry>
 </feed>
