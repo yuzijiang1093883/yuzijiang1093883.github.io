@@ -2,13 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuzijiang1093883.github.io</id>
     <title>蒟蒻炖蒟蒻的官方博客</title>
-    <updated>2020-04-12T13:08:21.497Z</updated>
+    <updated>2020-04-12T13:13:40.811Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuzijiang1093883.github.io"/>
     <link rel="self" href="https://yuzijiang1093883.github.io/atom.xml"/>
     <logo>https://yuzijiang1093883.github.io/images/avatar.png</logo>
     <icon>https://yuzijiang1093883.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 蒟蒻炖蒟蒻的官方博客</rights>
+    <entry>
+        <title type="html"><![CDATA[『JROI-1』蒟蒻炖蒟蒻Round1 赛后题解]]></title>
+        <id>https://yuzijiang1093883.github.io/post/UrsY5O8Ml/</id>
+        <link href="https://yuzijiang1093883.github.io/post/UrsY5O8Ml/">
+        </link>
+        <updated>2020-04-12T13:12:01.000Z</updated>
+        <content type="html"><![CDATA[<p>比赛后才会有</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[『JROI-1』蒟蒻炖蒟蒻Round1 赛事答疑]]></title>
         <id>https://yuzijiang1093883.github.io/post/BDrYE4F1l/</id>
