@@ -39,7 +39,7 @@ using namesp..." />
 <body>
     <div id=side>
         <div class="avatar-border">
-            <img src="https://yuzijiang1093883.github.io/images/avatar.png?v=1586856919057" class="avatar">
+            <img src="https://yuzijiang1093883.github.io/images/avatar.png?v=1586857032310" class="avatar">
         </div>
         <div class="sitename">蒟蒻炖蒟蒻的官方博客</div>
         <span class="describtion" data-text='[""]'>&nbsp;</span>
@@ -287,7 +287,7 @@ using namesp..." />
             </div>
             <div class="postinfo">
                 <div class="postdate"><i class="fa fa-calendar"></i>2020-04-14</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 9 min read</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 8 min read</div>
                 <div class="posttag">
                     
                 </div>
@@ -352,45 +352,8 @@ signed main()
 }
 </code></pre>
 <p>T3:<br>
-解释:<br>
-见<a href="https://www.luogu.com.cn/blog/45bamboo/ti-xie-shen-ji-han-shuo-post">这里</a><br>
-code:<br>
-<strong>ps:这个代码本酱自己修改了</strong></p>
-<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
-#define int long long
-#define s(...) scanf(__VA_ARGS__)
-using namespace std;
-int a,l,r,q;
-int qp(int base,int power)
-{
-	if(power==0)
-		return 1;
-	if(power==1)
-		return base%q;
-	int ans=qp(base,power&gt;&gt;1)%q;
-	ans*=ans%q;
-	ans%=q;
-	if(power%2)
-		ans*=base%q;
-	return ans%q;
-}
-int solve(int x)
-{
-	if(x==0)
-		return 0;
-	if(x&amp;1)
-		return (1+a*solve(x-1)%q)%q;
-	return (1+qp(a,x/2))%q*solve(x/2)%q;
-}
-signed main()
-{
-	s(&quot;%lld %lld %lld %lld&quot;,&amp;a,&amp;l,&amp;r,&amp;q);
-	a%=q;
-	cout&lt;&lt;(solve(r+1)-solve(l)+q)%q;
-	return 0;
-} 
-</code></pre>
-<p>T4:<br>
+<a href="https://www.luogu.com.cn/blog/45bamboo/ti-xie-shen-ji-han-shuo-post">这里</a><br>
+T4:<br>
 解释：<br>
 部分分瞎搞就好了，30 分相信大家都会。</p>
 <p>看到 kth 很容易想到主席树，用主席树维护即可，每一次加入的是一段区间，注意细节和空间问题。</p>
@@ -791,7 +754,7 @@ int main() {
             </div>
             <div class="postinfo">
                 <div class="postdate"><i class="fa fa-calendar"></i>2020-04-14</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 9 min read</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 8 min read</div>
                 <div class="posttag">
                     
                 </div>
@@ -856,45 +819,8 @@ signed main()
 }
 </code></pre>
 <p>T3:<br>
-解释:<br>
-见<a href="https://www.luogu.com.cn/blog/45bamboo/ti-xie-shen-ji-han-shuo-post">这里</a><br>
-code:<br>
-<strong>ps:这个代码本酱自己修改了</strong></p>
-<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
-#define int long long
-#define s(...) scanf(__VA_ARGS__)
-using namespace std;
-int a,l,r,q;
-int qp(int base,int power)
-{
-	if(power==0)
-		return 1;
-	if(power==1)
-		return base%q;
-	int ans=qp(base,power&gt;&gt;1)%q;
-	ans*=ans%q;
-	ans%=q;
-	if(power%2)
-		ans*=base%q;
-	return ans%q;
-}
-int solve(int x)
-{
-	if(x==0)
-		return 0;
-	if(x&amp;1)
-		return (1+a*solve(x-1)%q)%q;
-	return (1+qp(a,x/2))%q*solve(x/2)%q;
-}
-signed main()
-{
-	s(&quot;%lld %lld %lld %lld&quot;,&amp;a,&amp;l,&amp;r,&amp;q);
-	a%=q;
-	cout&lt;&lt;(solve(r+1)-solve(l)+q)%q;
-	return 0;
-} 
-</code></pre>
-<p>T4:<br>
+<a href="https://www.luogu.com.cn/blog/45bamboo/ti-xie-shen-ji-han-shuo-post">这里</a><br>
+T4:<br>
 解释：<br>
 部分分瞎搞就好了，30 分相信大家都会。</p>
 <p>看到 kth 很容易想到主席树，用主席树维护即可，每一次加入的是一段区间，注意细节和空间问题。</p>
