@@ -1,10 +1,14 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="这里是蒟蒻炖蒟蒻的官方blog
-这里会贴上比赛的赛时答疑以及题解与思路
-注意:请不要在评论区里发送与比赛没有关联的东西,对于无关评论,运营组保留删除的权力
-" />
+    <meta name="description" content="这里是『JROI-1』蒟蒻炖蒟蒻Round-0x01 的题解，目前隐藏
+T1:
+解释:
+目前没搞到
+code:
+#include&lt;bits/stdc++.h&gt;
+#define int long long
+using namesp..." />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://yuzijiang1093883.github.io/media/css/bootstrap.min.css">
     
@@ -279,31 +283,122 @@
         <div class="postshow">
             
             <div class="postdetailimg" style="width:100%;overflow: hidden;display: none">
-                <img src="http://img.xjh.me/random_img.php?type=bg&amp;ctype=nature&amp;return=302" class="postimage" style="cursor:auto">
+                <img src="https://i.loli.net/2020/04/13/BfSUHVh9zeRYTk1.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-04-12</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-04-14</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 4 min read</div>
                 <div class="posttag">
                     
                 </div>
             </div>
             
             <div id="texttitle" style="text-align: center">
-                <h2>公告</h2>
+                <h2>题解模板</h2>
             </div>
             <div class="text ">
-                <p>这里是蒟蒻炖蒟蒻的官方blog</p>
-<p>这里会贴上比赛的赛时答疑以及题解与思路</p>
-<p><strong>注意:请不要在评论区里发送与比赛没有关联的东西,对于无关评论,运营组保留删除的权力</strong></p>
+                <p>这里是『JROI-1』蒟蒻炖蒟蒻Round-0x01 的题解，目前隐藏</p>
+<p>T1:<br>
+解释:<br>
+目前没搞到</p>
+<p>code:</p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+using namespace std;
+int n,m,ans;
+double con[1500][1500];
+struct node{
+	double x,y;
+} p[1500];
+double dis(int a,int b)
+{
+	return sqrt((p[a].y-p[b].y)*(p[a].y-p[b].y)+(p[a].x-p[b].x)*(p[a].x-p[b].x));
+}
+signed main()
+{
+	cin&gt;&gt;n&gt;&gt;m;
+	for(int i=1;i&lt;=n;i++)
+		cin&gt;&gt;p[i].x&gt;&gt;p[i].y;
+	for(int i=1;i&lt;=n;i++)
+		for(int l=1;l&lt;=n;l++)
+			if(i!=l)
+				con[i][l]=1e9;
+	while(m--)
+	{
+		int a,b;
+		cin&gt;&gt;a&gt;&gt;b;
+		con[a][b]=con[b][a]=dis(a,b);
+	}
+	for(int k=1;k&lt;=n;k++)
+		for(int i=1;i&lt;=n;i++)
+			for(int l=1;l&lt;=n;l++)
+			{
+				con[i][l]=min(con[i][l],con[i][k]+con[k][l]);
+				con[l][i]=con[i][l];
+			}
+	for(int i=1;i&lt;=n-2;i++)
+		for(int l=i+1;l&lt;=n-1;l++)
+			for(int j=l+1;j&lt;=n;j++)
+			{
+				if(con[i][l]==dis(i,l)&amp;&amp;con[i][j]==dis(i,j)&amp;&amp;con[l][j]==dis(l,j))
+				{
+					double _max=max(dis(i,l),max(dis(l,j),dis(i,j)));
+					if(dis(i,l)+dis(l,j)+dis(i,j)-_max&gt;_max)
+						ans++;
+				}
+			}	
+	cout&lt;&lt;ans;
+	return 0;
+}
+</code></pre>
+<p>T2:<br>
+解释:<br>
+求第 l 项至第 r 项之和对 q 取模后的值。<br>
+如果打一个暴力，可以得40分左右。<br>
+这其实是一个等比数列，但由于要对一个分数取余，所以不能直接用等比数列的公式。<br>
+可以用 <code>solve(x)</code> 表示  <code>1+a^1+...+a^x</code><br>
+如果 x 是奇数，结果就是<code>1+a*solve(x-1)</code><br>
+如果 x 是偶数，结果就是<code>(1+a*2/x)*solve(x/2)</code><br>
+再写一个快速幂即可。<br>
+code:<br>
+<strong>ps:这个代码本酱自己修改了</strong></p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define s(...) scanf(__VA_ARGS__)
+using namespace std;
+int a,l,r,q;
+int qp(int base,int power)
+{
+	if(power==0)
+		return 1;
+	if(power==1)
+		return base%q;
+	int ans=qp(base,power&gt;&gt;1)%q;
+	ans*=ans%q;
+	ans%=q;
+	if(power%2)
+		ans*=base%q;
+	return ans%q;
+}
+int solve(int x)
+{
+	if(x==0)
+		return 0;
+	if(x&amp;1)
+		return (1+a*solve(x-1)%q)%q;
+	return (1+qp(a,x/2))%q*solve(x/2)%q;
+}
+signed main()
+{
+	s(&quot;%lld %lld %lld %lld&quot;,&amp;a,&amp;l,&amp;r,&amp;q);
+	a%=q;
+	cout&lt;&lt;(solve(r+1)-solve(l)+q)%q;
+	return 0;
+} 
+</code></pre>
+<p>欢迎各位选手提交自己的题解</p>
+<p>由于未知原因LATEX炸了，所以。。。</p>
 
-            </div>
-            
-            <div class="prev-post">
-                上一篇
-                <a href="https://yuzijiang1093883.github.io/post/BDrYE4F1l/">
-                    『JROI-1』蒟蒻炖蒟蒻Round1 赛事答疑
-                </a>
             </div>
             
             
@@ -575,31 +670,122 @@
         <div class="postshow">
             
             <div class="postdetailimg" style="width:100%;overflow: hidden;display: none">
-                <img src="http://img.xjh.me/random_img.php?type=bg&amp;ctype=nature&amp;return=302" class="postimage" style="cursor:auto">
+                <img src="https://i.loli.net/2020/04/13/BfSUHVh9zeRYTk1.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-04-12</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-04-14</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 4 min read</div>
                 <div class="posttag">
                     
                 </div>
             </div>
             
             <div id="texttitle" style="text-align: center">
-                <h2>公告</h2>
+                <h2>题解模板</h2>
             </div>
             <div class="text ">
-                <p>这里是蒟蒻炖蒟蒻的官方blog</p>
-<p>这里会贴上比赛的赛时答疑以及题解与思路</p>
-<p><strong>注意:请不要在评论区里发送与比赛没有关联的东西,对于无关评论,运营组保留删除的权力</strong></p>
+                <p>这里是『JROI-1』蒟蒻炖蒟蒻Round-0x01 的题解，目前隐藏</p>
+<p>T1:<br>
+解释:<br>
+目前没搞到</p>
+<p>code:</p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+using namespace std;
+int n,m,ans;
+double con[1500][1500];
+struct node{
+	double x,y;
+} p[1500];
+double dis(int a,int b)
+{
+	return sqrt((p[a].y-p[b].y)*(p[a].y-p[b].y)+(p[a].x-p[b].x)*(p[a].x-p[b].x));
+}
+signed main()
+{
+	cin&gt;&gt;n&gt;&gt;m;
+	for(int i=1;i&lt;=n;i++)
+		cin&gt;&gt;p[i].x&gt;&gt;p[i].y;
+	for(int i=1;i&lt;=n;i++)
+		for(int l=1;l&lt;=n;l++)
+			if(i!=l)
+				con[i][l]=1e9;
+	while(m--)
+	{
+		int a,b;
+		cin&gt;&gt;a&gt;&gt;b;
+		con[a][b]=con[b][a]=dis(a,b);
+	}
+	for(int k=1;k&lt;=n;k++)
+		for(int i=1;i&lt;=n;i++)
+			for(int l=1;l&lt;=n;l++)
+			{
+				con[i][l]=min(con[i][l],con[i][k]+con[k][l]);
+				con[l][i]=con[i][l];
+			}
+	for(int i=1;i&lt;=n-2;i++)
+		for(int l=i+1;l&lt;=n-1;l++)
+			for(int j=l+1;j&lt;=n;j++)
+			{
+				if(con[i][l]==dis(i,l)&amp;&amp;con[i][j]==dis(i,j)&amp;&amp;con[l][j]==dis(l,j))
+				{
+					double _max=max(dis(i,l),max(dis(l,j),dis(i,j)));
+					if(dis(i,l)+dis(l,j)+dis(i,j)-_max&gt;_max)
+						ans++;
+				}
+			}	
+	cout&lt;&lt;ans;
+	return 0;
+}
+</code></pre>
+<p>T2:<br>
+解释:<br>
+求第 l 项至第 r 项之和对 q 取模后的值。<br>
+如果打一个暴力，可以得40分左右。<br>
+这其实是一个等比数列，但由于要对一个分数取余，所以不能直接用等比数列的公式。<br>
+可以用 <code>solve(x)</code> 表示  <code>1+a^1+...+a^x</code><br>
+如果 x 是奇数，结果就是<code>1+a*solve(x-1)</code><br>
+如果 x 是偶数，结果就是<code>(1+a*2/x)*solve(x/2)</code><br>
+再写一个快速幂即可。<br>
+code:<br>
+<strong>ps:这个代码本酱自己修改了</strong></p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define s(...) scanf(__VA_ARGS__)
+using namespace std;
+int a,l,r,q;
+int qp(int base,int power)
+{
+	if(power==0)
+		return 1;
+	if(power==1)
+		return base%q;
+	int ans=qp(base,power&gt;&gt;1)%q;
+	ans*=ans%q;
+	ans%=q;
+	if(power%2)
+		ans*=base%q;
+	return ans%q;
+}
+int solve(int x)
+{
+	if(x==0)
+		return 0;
+	if(x&amp;1)
+		return (1+a*solve(x-1)%q)%q;
+	return (1+qp(a,x/2))%q*solve(x/2)%q;
+}
+signed main()
+{
+	s(&quot;%lld %lld %lld %lld&quot;,&amp;a,&amp;l,&amp;r,&amp;q);
+	a%=q;
+	cout&lt;&lt;(solve(r+1)-solve(l)+q)%q;
+	return 0;
+} 
+</code></pre>
+<p>欢迎各位选手提交自己的题解</p>
+<p>由于未知原因LATEX炸了，所以。。。</p>
 
-            </div>
-            
-            <div class="prev-post">
-                上一篇
-                <a href="https://yuzijiang1093883.github.io/post/BDrYE4F1l/">
-                    『JROI-1』蒟蒻炖蒟蒻Round1 赛事答疑
-                </a>
             </div>
             
             
