@@ -863,15 +863,15 @@ pre code {
 }
 
       .posttitlewithoutimg {
-        color: #212529;
+        color: #1c7ed6;
       }
     
       .sitename {
-        color: #212529;
+        color: #fa5252;
       }
     
         .describtion {
-          color: #212529;
+          color: #4c6ef5;
         }
       
         .menubutton {
@@ -879,10 +879,10 @@ pre code {
         }
       
         .posttitle {
-          color: #ffd43b;
+          color: #f03e3e;
         }
       
         #sitegotimeDate,#sitegotimes,#footinfo,#footinfo a{
-          color: #212529;
+          color: #0b7285;
         }
       

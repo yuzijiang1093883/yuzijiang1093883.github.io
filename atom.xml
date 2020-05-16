@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://yuzijiang1093883.github.io</id>
-    <title>蒟蒻炖蒟蒻的官方博客</title>
-    <updated>2020-04-15T00:28:27.017Z</updated>
+    <title>꧁༒•鱼子酱的博客•༒꧂</title>
+    <updated>2020-05-16T03:44:45.388Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yuzijiang1093883.github.io"/>
     <link rel="self" href="https://yuzijiang1093883.github.io/atom.xml"/>
+    <subtitle>一个HL屑oier</subtitle>
     <logo>https://yuzijiang1093883.github.io/images/avatar.png</logo>
     <icon>https://yuzijiang1093883.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 蒟蒻炖蒟蒻的官方博客</rights>
+    <rights>All rights reserved 2020, ꧁༒•鱼子酱的博客•༒꧂</rights>
     <entry>
-        <title type="html"><![CDATA[『JROI-1』蒟蒻炖蒟蒻Round1 赛后题解]]></title>
-        <id>https://yuzijiang1093883.github.io/post/UrsY5O8Ml/</id>
-        <link href="https://yuzijiang1093883.github.io/post/UrsY5O8Ml/">
+        <title type="html"><![CDATA[暂时AFO了]]></title>
+        <id>https://yuzijiang1093883.github.io/tUEzLHPML/</id>
+        <link href="https://yuzijiang1093883.github.io/tUEzLHPML/">
         </link>
-        <updated>2020-04-12T13:12:01.000Z</updated>
-        <content type="html"><![CDATA[<p>比赛后才会有<br>
-预告:赛后题解将会在比赛后五分钟内做出来，请各位选手们期待把!</p>
+        <updated>2020-05-16T03:42:56.000Z</updated>
+        <content type="html"><![CDATA[<p>以后这个博客里人会少很多吧... <s>虽然本来就没什么人</s></p>
+<p>不管怎么挽留,还是AFO了...</p>
+<p>不过不用担心，我的活跃是不会减少很多的。</p>
+<p>不过AFO只是暂时的。</p>
+<p>看着身边的OIer一个个走出机房，回归到whk上。</p>
+<p>再看看成绩直线下降的我...</p>
+<p>再见，OI，不过只是暂时的。</p>
+<p>以后我还会回来的...</p>
+<p>加油。先把whk搞上去吧...</p>
+<p><strong>EOF</strong></p>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[『JROI-1』蒟蒻炖蒟蒻Round1 赛事答疑]]></title>
-        <id>https://yuzijiang1093883.github.io/post/BDrYE4F1l/</id>
-        <link href="https://yuzijiang1093883.github.io/post/BDrYE4F1l/">
+        <title type="html"><![CDATA[声明]]></title>
+        <id>https://yuzijiang1093883.github.io/yPp4wpIgC/</id>
+        <link href="https://yuzijiang1093883.github.io/yPp4wpIgC/">
         </link>
-        <updated>2020-04-12T12:57:08.000Z</updated>
-        <content type="html"><![CDATA[<p>这里是『JROI-1』蒟蒻炖蒟蒻Round1 的赛时答疑<br>
-如果有任何问题请在下方评论，芥末鱼子酱的智障机器人会每个都作答的</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[公告]]></title>
-        <id>https://yuzijiang1093883.github.io/post/XdLZ-AfUn/</id>
-        <link href="https://yuzijiang1093883.github.io/post/XdLZ-AfUn/">
-        </link>
-        <updated>2020-04-12T04:05:37.000Z</updated>
-        <content type="html"><![CDATA[<p>这里是蒟蒻炖蒟蒻的官方blog</p>
-<p>这里会贴上比赛的赛时答疑以及题解与思路</p>
-<p><strong>注意:请不要在评论区里发送与比赛没有关联的东西,对于无关评论,运营组保留删除的权力</strong></p>
+        <updated>2020-05-16T03:42:16.000Z</updated>
+        <content type="html"><![CDATA[<p>本博客只是备份，并无任何实际意义</p>
 ]]></content>
     </entry>
 </feed>
